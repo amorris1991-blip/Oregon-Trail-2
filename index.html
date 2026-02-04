@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>The Oregon Trail (1990)</title>
+    <script src="https://js-dos.com/cdn/js-dos-api.js"></script>
+    <style>
+        .dosbox-container { width: 640px; height: 400px; margin: 0 auto; }
+    </style>
+</head>
+<body>
+    <div id="dosbox"></div>
+    <script type="text/javascript">
+        var dosbox = new Dosbox({
+            id: "dosbox",
+            onload: function (dosbox) {
+                // This link is the verified 1990 MS-DOS bundle
+                dosbox.run("https://js-dos.com Trail-@dirtydanisreal.zip", "./OREGONTRAIL.COM");
+            }
+        });
+    </script>
+</body>
+</html>
